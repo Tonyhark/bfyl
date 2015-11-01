@@ -1535,4 +1535,38 @@ a.tdL {
   height: 400px;
   background: url(../img/about/map.jpg) no-repeat center center; }
 
+/*
+认证
+*/
+.authen-cate-rel {
+  position: relative;
+  height: 36px;
+  margin-bottom: 62px; }
+
+.authen-content .sub-cate-tabs {
+  position: absolute;
+  left: 50%;
+  margin-left: -404px; }
+
+.authen-shelf {
+  background: url(../img/authen/auth-shelf.png) no-repeat;
+  height: 33px;
+  margin-bottom: 40px; }
+
+.authen-row {
+  overflow: hidden; }
+
+.aut-cell {
+  width: 235px;
+  float: left;
+  margin: 0 17px; }
+
+.aut-pic {
+  margin-bottom: 23px; }
+
+.aut-name {
+  height: 36px;
+  text-align: center;
+  color: #444; }
+
 /*# sourceMappingURL=common.css.map */

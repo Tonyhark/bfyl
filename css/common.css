@@ -1651,4 +1651,19 @@ case
   color: inherit;
   text-decoration: none; }
 
+.dot-p {
+  color: #555;
+  margin-bottom: 5px;
+  background: url(../img/black-dot.png) no-repeat 4px 7px;
+  padding-left: 20px;
+  font-size: 14px; }
+
+.h5-tit {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: Helvetica; }
+
 /*# sourceMappingURL=common.css.map */

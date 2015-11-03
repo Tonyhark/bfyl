@@ -191,7 +191,7 @@ a.tdL {
 }
 
 .sub-cate-ul {
-  z-index: 9;
+  z-index: 999;
   position: absolute;
   width: 136px;
   top: 0;
@@ -228,6 +228,7 @@ a.tdL {
   width: 25px;
   height: 43px;
   top: 156px;
+  z-index: 99;
 }
 
 .slide-aow-l {
@@ -242,6 +243,7 @@ a.tdL {
 
 .slide-list {
   height: 354px;
+  overflow: hidden;
 }
 
 .section-solution {
@@ -597,14 +599,16 @@ a.tdL {
   line-height: 36px;
   float: left;
 }
-.sub-cate-tabs .cur{
+.sub-cate-tabs .current{
   background-color: $mainRed;
   color: #FFFFFF;
 }
 .sub-cate-tabs a:hover{
   text-decoration: none;
 }
-
+.authen-panel{
+  display: none;
+}
 
 /*
 关于我们

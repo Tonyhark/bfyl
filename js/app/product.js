@@ -1,37 +1,37 @@
 /**
  * Created by ZhaoYue on 2015/10/31.
  */
-define(['$', 'backbone'], function ($, Backbone) {
-
-    //ÅäÖÃÂ·ÓÉ
+define('app/product', function (require, exports,module) {
+    var Backbone = require('backbone');
+    //é…ç½®è·¯ç”±
     var autoRouter = Backbone.Router.extend({
-        routes: {
-            '': 'index',
-            'at/:module/:action(/*condition)': 'loadmodule'
-        },
-        home: function() {
-            this.loadmodule('home', 'index');
-        },
-        //°´ÕÕat/module/action(/conditions)¸ñÊ½µÄÕˆÇó×Ô„Ó¼ÓİdÄ£‰K
-        loadmodule: function(md, ac, con) {
-            //½«²ÎÊı×Ö·û´®'a:123/b:456'×ª»»Îªjson¶ÔÏó{a:123, b:456}
-            var cj = {};
-            if(con && con.indexOf(':') > -1) {
-                con.replace(/(\w+)\s*:\s*([\w-]+)/g, function(a, b, c) {
-                    b && (cj[b] = c);
-                });
-            } else {
-                cj = con;
-            }
-            //¼ÓÔØmoduleÄ¿Â¼ÏÂ¶ÔÓ¦µÄÄ£¿é
-            require.async(['module', md, ac].join('/'), function(cb) {
-                if(cb) {
-                    cb(cj);
-                } else {
-                    alert('Ä£‰K¼ÓİdÊ§”¡£¡');
-                }
-            })
-        }
+        //routes: {
+        //    '': 'index',
+        //    'at/:module/:action(/*condition)': 'loadmodule'
+        //},
+        //home: function() {
+        //    this.loadmodule('home', 'index');
+        //},
+        ////æŒ‰ç…§at/module/action(/conditions)æ ¼å¼çš„è«‹æ±‚è‡ªå‹•åŠ è¼‰æ¨¡å¡Š
+        //loadmodule: function(md, ac, con) {
+        //    //å°†å‚æ•°å­—ç¬¦ä¸²'a:123/b:456'è½¬æ¢ä¸ºjsonå¯¹è±¡{a:123, b:456}
+        //    var cj = {};
+        //    if(con && con.indexOf(':') > -1) {
+        //        con.replace(/(\w+)\s*:\s*([\w-]+)/g, function(a, b, c) {
+        //            b && (cj[b] = c);
+        //        });
+        //    } else {
+        //        cj = con;
+        //    }
+        //    //åŠ è½½moduleç›®å½•ä¸‹å¯¹åº”çš„æ¨¡å—
+        //    require.async(['module', md, ac].join('/'), function(cb) {
+        //        if(cb) {
+        //            cb(cj);
+        //        } else {
+        //            alert('æ¨¡å¡ŠåŠ è¼‰å¤±æ•—ï¼');
+        //        }
+        //    })
+        //}
     });
 
 });

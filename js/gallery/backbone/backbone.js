@@ -3,6 +3,7 @@ define('gallery/backbone/backbone', ['underscore', '$'], function(require, expor
 	this.jQuery = require('$');
 // Backbone.js 0.9.10
 
+
 // (c) 2010-2012 Jeremy Ashkenas, DocumentCloud Inc.
 // Backbone may be freely distributed under the MIT license.
 // For all details and documentation:

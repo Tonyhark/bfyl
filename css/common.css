@@ -1158,7 +1158,7 @@ a.tdL {
   display: block; }
 
 .sub-cate-ul {
-  z-index: 9;
+  z-index: 999;
   position: absolute;
   width: 136px;
   top: 0;
@@ -1189,7 +1189,8 @@ a.tdL {
   background-image: url(../img/aow-bn.png);
   width: 25px;
   height: 43px;
-  top: 156px; }
+  top: 156px;
+  z-index: 99; }
 
 .slide-aow-l {
   background-position: 0 0;
@@ -1200,7 +1201,8 @@ a.tdL {
   right: 0; }
 
 .slide-list {
-  height: 354px; }
+  height: 354px;
+  overflow: hidden; }
 
 .section-solution {
   min-width: 1140px;
@@ -1506,12 +1508,15 @@ a.tdL {
   line-height: 36px;
   float: left; }
 
-.sub-cate-tabs .cur {
+.sub-cate-tabs .current {
   background-color: #dc140f;
   color: #FFFFFF; }
 
 .sub-cate-tabs a:hover {
   text-decoration: none; }
+
+.authen-panel {
+  display: none; }
 
 /*
 关于我们

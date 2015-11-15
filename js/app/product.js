@@ -2,36 +2,52 @@
  * Created by ZhaoYue on 2015/10/31.
  */
 define('app/product', function (require, exports,module) {
-    var Backbone = require('backbone');
-    //配置路由
-    var autoRouter = Backbone.Router.extend({
-        //routes: {
-        //    '': 'index',
-        //    'at/:module/:action(/*condition)': 'loadmodule'
-        //},
-        //home: function() {
-        //    this.loadmodule('home', 'index');
-        //},
-        ////按照at/module/action(/conditions)格式的請求自動加載模塊
-        //loadmodule: function(md, ac, con) {
-        //    //将参数字符串'a:123/b:456'转换为json对象{a:123, b:456}
-        //    var cj = {};
-        //    if(con && con.indexOf(':') > -1) {
-        //        con.replace(/(\w+)\s*:\s*([\w-]+)/g, function(a, b, c) {
-        //            b && (cj[b] = c);
-        //        });
-        //    } else {
-        //        cj = con;
-        //    }
-        //    //加载module目录下对应的模块
-        //    require.async(['module', md, ac].join('/'), function(cb) {
-        //        if(cb) {
-        //            cb(cj);
-        //        } else {
-        //            alert('模塊加載失敗！');
-        //        }
-        //    })
-        //}
-    });
+    var $ = require('$');
+
+    $(document).on('click','.movie-btn',handleClickBtn);
+    $(document).on('click','.movie-close',handleClickClose);
+
+    function handleClickBtn (e){
+        var $btn = $(this);
+        var $btnBar = $btn.parent();
+        var $playerCntr = $btnBar.next();
+        var videoName = $btn.attr('name');
+        var videoUrl = 'http://www.youlitech.com/new/video/'+ videoName +'.mp4';
+        var title = $btn.attr('title');
+        $btnBar.hide();
+        playMovie(videoName,videoUrl,$playerCntr,title)
+    }
+
+    function playMovie (videoName,videoUrl,cntr,title){
+        var $a = $('<a>',{
+            id: videoName,
+            style: 'display:block;width:480px;height:340px',
+            href: videoUrl
+        });
+        cntr.find('.movie-title').html(title);
+        cntr.find('.movie-player').append($a);
+        flowplayer(videoName, "../swf/flowplayer-3.2.7.swf",{
+            clip: {
+                //url: "flowplayer.flv",
+                scaling: 'fit',
+                autoPlay: true,
+                autoBuffering: true
+            }
+        });
+        cntr.show();
+    }
+
+    function handleClickClose (e){
+        var $this = $(this);
+        var $playerCntr = $this.closest('.movie-ctnr');
+        var $btnBar = $playerCntr.siblings('.movie-btns');
+        closePlayer($btnBar,$playerCntr);
+
+    }
+    function closePlayer (btnBar,cntr){
+        cntr.find('.movie-player').empty();
+        cntr.hide();
+        btnBar.show()
+    }
 
 });

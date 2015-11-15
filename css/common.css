@@ -1414,6 +1414,9 @@ a.tdL {
   line-height: 130px;
   height: 130px; }
 
+.col-side .side-header h3 {
+  font-size: 24px; }
+
 .side-ul {
   border: 1px solid #CCCCCC;
   padding: 11px 19px; }
@@ -1477,12 +1480,60 @@ a.tdL {
   font-size: 14px;
   margin-bottom: 10px; }
 
+.movie-btns {
+  overflow: hidden; }
+
+.movie-btn {
+  background: url(../img/movie-icon.png) no-repeat 13px 9px;
+  padding: 0 15px 0 54px;
+  height: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #dc140f;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+  display: block;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  float: left; }
+
+.movie-btn:hover {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.movie-ctnr {
+  background-color: #f2f2f5;
+  padding: 20px;
+  width: 480px;
+  border-radius: 3px;
+  display: none; }
+
+.movie-ctnr-tool {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.movie-close {
+  color: #333;
+  text-decoration: underline;
+  float: left; }
+
+.movie-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold; }
+
 .w263 {
   width: 263px; }
 
 .w555 {
   width: 555px; }
 
+/*
+认证
+*/
 .renzheng-section {
   margin-left: 38px; }
 
@@ -1508,7 +1559,7 @@ a.tdL {
   line-height: 36px;
   float: left; }
 
-.sub-cate-tabs .current {
+.sub-cate-tabs .current, .sub-cate-tabs .cur {
   background-color: #dc140f;
   color: #FFFFFF; }
 

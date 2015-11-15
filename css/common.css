@@ -1020,11 +1020,11 @@ del {
   height: 300px; }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Microsoft Yahei"; }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Microsoft Yahei"; }
 
 h3 {
@@ -1094,20 +1094,20 @@ a.tdL {
   margin: 30px 0 0; }
 
 .nav li {
-  width: 90px;
+  width: 80px;
   float: left;
   margin: 0 0 0 10px; }
 
 .nav li.l {
-  width: 110px; }
+  width: 95px; }
 
 .nav a {
   display: block;
   color: #333;
   border-radius: 3px;
-  font-size: 16px;
-  height: 36px;
-  line-height: 36px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
   text-align: center;
   font-family: "Microsoft Yahei"; }
 
@@ -1133,7 +1133,7 @@ a.tdL {
 .cate-nav-ul a {
   display: block;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 42px;
   height: 42px;
   padding-left: 30px;
@@ -1171,7 +1171,7 @@ a.tdL {
   background-color: #fff; }
 
 .sub-cate-ul li a {
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   padding-left: 20px;
   color: #333; }
@@ -1207,9 +1207,9 @@ a.tdL {
 .section-solution {
   min-width: 1140px;
   background: url(../img/xiewen-bg.png) repeat;
-  padding: 80px 0 100px; }
+  padding: 60px 0 60px; }
 
-.section-solution h1 {
+.section-solution h2 {
   line-height: 58px;
   margin-bottom: 24px;
   text-align: center;
@@ -1225,11 +1225,12 @@ a.tdL {
   margin: 0 auto; }
 
 .solution-gallery {
-  margin: 68px 0 0; }
+  margin: 50px 0 0; }
 
 .solution-gallery .cell {
-  width: 20%;
-  float: left; }
+  width: 25%;
+  float: left;
+  position: relative; }
 
 .cell img {
   width: 100%; }
@@ -1238,25 +1239,57 @@ a.tdL {
   width: 1140px;
   margin: 0 auto; }
 
+.solution-gallery .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dc140f;
+  opacity: 0.5;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: none; }
+
+.solution-gallery .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Microsoft Yahei";
+  line-height: 285px;
+  display: none; }
+
+.solution-gallery .cell:hover .text, .solution-gallery .cell:hover .mask {
+  display: block; }
+
 .section-case {
   min-width: 1140px;
   height: 600px;
   background: url(../img/index-case-bg.jpg) center center no-repeat; }
 
-.section-case h1 {
+.section-case h2 {
   line-height: 58px;
-  margin-bottom: 76px;
+  margin-bottom: 50px;
   text-align: center;
   color: #FFFFFF;
   background: url(../img/white-line.png) center bottom no-repeat;
-  padding-top: 80px; }
+  padding-top: 30px; }
 
 .case-cell {
   position: relative;
-  width: 360px;
-  height: 240px;
+  width: 300px;
+  height: 200px;
   float: left;
-  margin-right: 30px; }
+  margin-right: 117px;
+  margin-bottom: 25px; }
+
+.case-cell img {
+  width: 100%; }
 
 .case-cell-last {
   margin-right: 0; }
@@ -1269,7 +1302,7 @@ a.tdL {
   width: 100%; }
 
 .case-cell .t {
-  font-size: 18px;
+  font-size: 16px;
   color: #333333;
   height: 40px;
   line-height: 40px;
@@ -1319,18 +1352,24 @@ a.tdL {
 
 .commu .cr-code {
   position: absolute;
-  height: 102px;
+  height: 120px;
   width: 103px;
-  background-color: #000;
   left: -36px;
   top: -116px;
   display: none; }
+
+.commu .weibo .cr-code {
+  background: url(../img/qrcode-weibo.png) no-repeat; }
+
+.commu .weixin .cr-code {
+  background: url(../img/qrcode-weixin.png) no-repeat; }
 
 .commu li:hover .cr-code {
   display: block; }
 
 .footer {
-  margin-top: 35px; }
+  padding-top: 35px;
+  background: url(../img/xiewen-bg.png) repeat; }
 
 .site-info-section {
   float: left;
@@ -1347,7 +1386,8 @@ a.tdL {
 
 .site-info .intro p {
   line-height: 24px;
-  font-size: 14px; }
+  font-size: 12px;
+  text-indent: 2em; }
 
 .site-info .sitemap {
   width: 263px; }
@@ -1371,16 +1411,20 @@ a.tdL {
 .about-main .link-info dd {
   float: left;
   padding-left: 30px;
-  margin-right: 38px; }
+  margin-right: 10px;
+  font-size: 12px; }
 
 .site-info .contact .addr, .about-main .link-info .addr {
   background-position: 0 0; }
 
 .site-info .contact .post, .about-main .link-info .post {
-  background-position: 0 -32px; }
+  background-position: 0 -33px; }
 
 .site-info .contact .phone, .about-main .link-info .phone {
   background-position: 0 -67px; }
+
+.site-info .contact .mobile, .about-main .link-info .mobile {
+  background-position: 0 -98px; }
 
 /*
 产品
@@ -1398,10 +1442,10 @@ a.tdL {
   margin-bottom: 74px; }
 
 .channel-title h1 {
-  font-size: 30px;
+  font-size: 26px;
   color: #FFFFFF;
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 80px;
   font-family: "Microsoft Yahei";
   text-align: center; }
 
@@ -1429,12 +1473,15 @@ a.tdL {
   line-height: 40px;
   display: block;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Microsoft Yahei";
   padding-left: 21px;
   background-image: url(../img/gray-red-dot.png);
   background-repeat: no-repeat;
   background-position: 5px 18px; }
+
+.side-ul li a:hover {
+  color: #dc140f; }
 
 .side-ul li.cur a {
   color: #dc140f;
@@ -1443,7 +1490,7 @@ a.tdL {
 .col-main h2, .about-main h2 {
   background: url(../img/main-h2-line.png) left bottom no-repeat;
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 15px;
   margin-bottom: 25px; }
 
@@ -1457,14 +1504,14 @@ a.tdL {
   padding-bottom: 10px; }
 
 .main-section h4 {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   border-bottom: 2px solid #333333;
   overflow: hidden; }
 
 .main-section .matrix {
-  line-height: 35px;
-  height: 35px;
+  line-height: 30px;
+  height: 30px;
   color: #FFFFFF;
   display: block;
   float: left;
@@ -1476,8 +1523,15 @@ a.tdL {
 
 .main-p {
   color: #777;
-  line-height: 30px;
-  font-size: 14px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-indent: 2em; }
+
+.main-p-1 {
+  color: #777;
+  line-height: 24px;
+  font-size: 12px;
   margin-bottom: 10px; }
 
 .movie-btns {
@@ -1539,7 +1593,7 @@ a.tdL {
 
 .renzheng-section h5 {
   margin-left: -38px;
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
   margin-bottom: 5px;
   background: url(../img/black-dot.png) no-repeat 19px 9px;
@@ -1551,20 +1605,25 @@ a.tdL {
 
 .sub-cate-tabs a {
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Microsoft Yahei";
   color: #444;
-  padding: 0 24px;
-  height: 36px;
-  line-height: 36px;
-  float: left; }
+  padding: 0 20px;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  border-radius: 3px; }
 
 .sub-cate-tabs .current, .sub-cate-tabs .cur {
   background-color: #dc140f;
   color: #FFFFFF; }
 
 .sub-cate-tabs a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #dc140f; }
+
+.sub-cate-tabs .cur:hover, .sub-cate-tabs .current:hover {
+  color: #FFFFFF; }
 
 .authen-panel {
   display: none; }
@@ -1586,10 +1645,9 @@ a.tdL {
   padding: 5px; }
 
 .about-map {
-  margin-top: 120px;
-  min-width: 1140px;
-  height: 400px;
-  background: url(../img/about/map.jpg) no-repeat center center; }
+  margin-top: 50px;
+  margin-bottom: 20px;
+  min-width: 1140px; }
 
 /*
 认证
@@ -1629,7 +1687,7 @@ a.tdL {
 case
 */
 .case-side-header h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: #333; }
 
@@ -1676,7 +1734,7 @@ case
   border-bottom: 1px dashed #dedede; }
 
 .case-ul h4 {
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 10px; }
 
@@ -1688,7 +1746,7 @@ case
 
 .case-ul .info {
   color: #555;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   margin-bottom: 14px;
   display: block; }
@@ -1710,9 +1768,9 @@ case
 .dot-p {
   color: #555;
   margin-bottom: 5px;
-  background: url(../img/black-dot.png) no-repeat 4px 7px;
+  background: url(../img/black-dot.png) no-repeat 4px 6px;
   padding-left: 20px;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .h5-tit {
   font-weight: bold;

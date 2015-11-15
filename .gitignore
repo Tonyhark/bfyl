@@ -5,6 +5,7 @@
 *.out
 *.pid
 *.zip
+*.rar
 .idea/  
 dist/  
 node_modules/

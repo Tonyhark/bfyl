@@ -10,7 +10,12 @@ $yahei: 'Microsoft Yahei';
 body {
 
 }
-
+td, th {
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 5px 10px;
+  border: 1px solid #DDD;
+}
 a {
 }
 
@@ -246,6 +251,23 @@ a.tdL {
   overflow: hidden;
 }
 
+.slogan {
+  color: #891c2e;
+  font-family: $yahei;
+  position: absolute;
+  top: 152px;
+  left: 66px;
+  z-index: 19;
+}
+
+.slogan .m{
+  font-size: 24px;
+}
+.slogan .s{
+  font-size: 48px;
+}
+
+
 .section-solution {
   min-width: $pageWidth;
   background: url(../img/xiewen-bg.png) repeat;
@@ -321,7 +343,7 @@ a.tdL {
 
 .section-case {
   min-width: $pageWidth;
-  height: 600px;
+  height: 380px ;
   background: url(../img/index-case-bg.jpg) center center no-repeat;
 }
 
@@ -336,10 +358,9 @@ a.tdL {
 
 .case-cell {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 200px;
   float: left;
-  margin-right: 117px;
+  margin-right: 28px;
   margin-bottom: 25px;
 
 }

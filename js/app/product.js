@@ -12,7 +12,7 @@ define('app/product', function (require, exports,module) {
         var $btnBar = $btn.parent();
         var $playerCntr = $btnBar.next();
         var videoName = $btn.attr('name');
-        var videoUrl = 'http://www.youlitech.com/new/video/'+ videoName +'.mp4';
+        var videoUrl = 'http://www.youlitech.com/video/'+ videoName +'.mp4';
         var title = $btn.attr('title');
         $btnBar.hide();
         playMovie(videoName,videoUrl,$playerCntr,title)

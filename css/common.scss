@@ -112,7 +112,15 @@ a.tdL {
 .bfyl {
   float: left;
 }
-
+.hzhb {
+  float: left;
+  margin-top: 13px;
+  width: 240px;
+  margin-left: -15px;
+}
+.hzhb img{
+  width: 100%;
+}
 .nav {
   float: right;
   margin: 30px 0 0;
@@ -777,6 +785,7 @@ a.tdL {
   margin-top: 50px;
   margin-bottom: 20px;
   min-width: $pageWidth;
+  text-align: center;
 }
 
 /*
@@ -918,3 +927,12 @@ case
   font-family: Helvetica;
 }
 
+.ui-dialog-content{
+  text-align: center;
+}
+.ui-dialog {
+  margin-top: 50px;
+}
+.ui-dialog-content img{
+  padding-top: 15px;
+}

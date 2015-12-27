@@ -1112,12 +1112,12 @@ a.tdL {
   margin: 30px 0 0; }
 
 .nav li {
-  width: 80px;
+  width: 75px;
   float: left;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 5px; }
 
 .nav li.l {
-  width: 95px; }
+  width: 90px; }
 
 .nav a {
   display: block;
@@ -1432,29 +1432,29 @@ a.tdL {
   line-height: 24px;
   font-size: 14px; }
 
-.site-info .contact dd, .about-main .link-info dd {
+.site-info .contact dd, .about-main .link-info dd, .coop-main .link-info dd {
   font-size: 14px;
   height: 32px;
   padding-left: 40px;
   background-image: url(../img/contact-icon.png);
   background-repeat: no-repeat; }
 
-.about-main .link-info dd {
+.about-main .link-info dd, .coop-main .link-info dd {
   float: left;
   padding-left: 30px;
   margin-right: 10px;
   font-size: 12px; }
 
-.site-info .contact .addr, .about-main .link-info .addr {
+.site-info .contact .addr, .about-main .link-info .addr, .coop-main .link-info .addr {
   background-position: 0 0; }
 
-.site-info .contact .post, .about-main .link-info .post {
+.site-info .contact .post, .about-main .link-info .post, .coop-main .link-info .post {
   background-position: 0 -33px; }
 
-.site-info .contact .phone, .about-main .link-info .phone {
+.site-info .contact .phone, .about-main .link-info .phone, .coop-main .link-info .phone {
   background-position: 0 -67px; }
 
-.site-info .contact .mobile, .about-main .link-info .mobile {
+.site-info .contact .mobile, .about-main .link-info .mobile, .coop-main .link-info .mobile {
   background-position: 0 -98px; }
 
 /*
@@ -1541,8 +1541,8 @@ a.tdL {
   overflow: hidden; }
 
 .main-section .matrix {
-  line-height: 30px;
-  height: 30px;
+  line-height: 28px;
+  height: 28px;
   color: #FFFFFF;
   display: block;
   float: left;
@@ -1820,5 +1820,19 @@ case
 
 .ui-dialog-content img {
   padding-top: 15px; }
+
+/**
+ 增加渠道合作
+*/
+.coop-main {
+  width: 650px;
+  margin: 0 auto; }
+
+.coop-main .main-p-1 {
+  margin-left: 30px; }
+
+.main-p-1 .number {
+  margin-left: -20px;
+  float: left; }
 
 /*# sourceMappingURL=common.css.map */
